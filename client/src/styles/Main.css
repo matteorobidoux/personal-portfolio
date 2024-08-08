@@ -1,0 +1,58 @@
+.Main {
+	margin-bottom: 2%;
+}
+
+.cover {
+	margin-top: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.cover .name-text,
+.title-text,
+.desc-text {
+	text-align: center;
+	font-weight: 100;
+}
+
+.desc-text {
+	letter-spacing: 0.2em;
+}
+
+.cover .name-text {
+	margin-bottom: 0;
+}
+
+.name {
+	font-size: 3em;
+	text-align: center;
+}
+
+.cover .title-text {
+	font-size: 1.5em;
+}
+
+.desc {
+	margin-top: 5%;
+	width: 70%;
+	letter-spacing: 0.1em;
+}
+
+.blinking-cursor {
+	color: white;
+	animation: blink 1s infinite;
+}
+
+@keyframes blink {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}

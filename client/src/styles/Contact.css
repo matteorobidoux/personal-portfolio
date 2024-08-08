@@ -1,0 +1,124 @@
+.Contact {
+	flex: 1;
+	margin-bottom: 2%;
+}
+
+.contact-title {
+	font-weight: 100;
+	text-align: center;
+	font-size: 2.5em;
+	letter-spacing: 5px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+textarea,
+input {
+	width: 50vw;
+	padding: 10px;
+	margin: 10px 0;
+	display: block; /* Ensure inputs are block elements */
+	border: 1.5px solid rgba(36, 47, 26, 0.284);
+	background-color: rgba(192, 201, 186, 0.8);
+	font-size: large;
+	resize: none;
+	font-family: Maison Neue Mono;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-box-shadow: 0 0 0 30px rgba(192, 201, 186, 0.8) inset !important;
+	-moz-box-shadow: 0 0 0 30px rgba(192, 201, 186, 0.8) inset !important;
+	box-shadow: 0 0 0 30px rgba(192, 201, 186, 0.8) inset !important;
+}
+
+textarea {
+	height: 200px;
+}
+
+textarea:focus,
+input:focus {
+	outline: 1.35px solid rgba(36, 47, 26, 0.584);
+	background-color: rgba(192, 201, 186, 0.8);
+}
+
+label {
+	font-size: 1.5em;
+}
+
+.form-submit {
+	background-color: rgba(36, 47, 26, 0.3);
+	border: 1.35px solid rgba(36, 47, 26, 0.584);
+	color: rgb(33, 43, 24);
+	padding: 10px 40px;
+	font-size: 1.1em;
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+.form-submit:disabled {
+	background-color: rgba(36, 47, 26, 0.1);
+	border: 1.35px solid rgba(36, 47, 26, 0.284);
+	color: rgba(36, 47, 26, 0.5);
+	cursor: not-allowed;
+}
+
+.form-submit:disabled:hover {
+	outline: none;
+}
+
+.form-submit:hover {
+	outline: 2px solid rgba(36, 47, 26, 0.75);
+}
+
+.form-error {
+	border: 1.5px solid rgba(208, 26, 26, 0.75);
+	animation: shake 0.2s ease-in-out 0s 2;
+}
+
+.form-error:focus {
+	outline: 1.75px solid rgba(208, 26, 26, 0.75);
+}
+
+.form-indicator {
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@keyframes shake {
+	0% {
+		margin-left: 0rem;
+	}
+	25% {
+		margin-left: 0.5rem;
+	}
+	75% {
+		margin-left: -0.5rem;
+	}
+	100% {
+		margin-left: 0rem;
+	}
+}
+
+/* Custom styles for toast notifications */
+.Toastify__toast {
+	background-color: rgba(36, 47, 26, 0.8) !important;
+	color: white !important;
+	z-index: 9999 !important;
+}
+
+.Toastify__toast-body {
+	font-size: 1.1em;
+}
+
+.Toastify__progress-bar {
+	background: rgba(36, 47, 26, 0.584) !important;
+}

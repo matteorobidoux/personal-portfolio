@@ -1,0 +1,14 @@
+[
+	{ "name": "Java", "image": "java" },
+	{ "name": "Python", "image": "python" },
+	{ "name": "Javascript", "image": "javascript" },
+	{ "name": "C", "image": "c" },
+	{ "name": "HTML", "image": "html" },
+	{ "name": "CSS", "image": "css" },
+	{ "name": "React", "image": "react" },
+	{ "name": "SQL", "image": "sql" },
+	{ "name": "Typescript", "image": "typescript" },
+	{ "name": "MySQL", "image": "mysql" },
+	{ "name": "Kotlin", "image": "kotlin" },
+	{ "name": "C#", "image": "csharp" }
+]
