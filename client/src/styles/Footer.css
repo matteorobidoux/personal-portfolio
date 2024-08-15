@@ -1,18 +1,17 @@
 .footer {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px;
+	margin-top: 3%;
 	background-color: rgba(36, 47, 26, 0.1);
 	color: white;
 	border-top: 1px solid rgba(255, 255, 255, 0.2);
-	flex-wrap: wrap; /* Allow wrapping of items */
-	box-sizing: border-box; /* Include padding in the total width */
 }
 
-.footer-tag {
-	font-size: 1.1em;
-	margin-bottom: 10px; /* Add some margin for spacing in mobile view */
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap; /* Allow wrapping of items */
+	box-sizing: border-box; /* Include padding in the total width */
+	margin: 2% 1%;
 }
 
 .footer-links {
@@ -21,7 +20,10 @@
 	justify-content: flex-end; /* Align to the right by default */
 	max-width: 600px; /* Prevent the container from being too wide */
 	flex-wrap: wrap; /* Allow wrapping of items */
-	gap: 10px; /* Add some space between items */
+}
+
+.footer-tag p {
+	margin: 0;
 }
 
 .footer-links ul {
@@ -29,13 +31,9 @@
 	display: flex;
 	padding: 0;
 	margin: 0;
-	justify-content: flex-end; /* Align items to the right */
+	justify-content: flex-end;
 	flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-}
-
-.footer-links li {
-	font-size: 1.1em;
-	margin: 0 10px;
+	gap: 20px; /* Add gap between links */
 }
 
 .footer-link {
@@ -45,7 +43,6 @@
 	text-align: center;
 	position: relative;
 	transition: color 0.4s ease;
-	padding-bottom: 3px;
 }
 
 .footer-link::before {
@@ -54,12 +51,16 @@
 	display: block;
 	width: 100%;
 	height: 2px;
-	bottom: 0;
+	bottom: -2px;
 	left: 0;
 	background-color: white;
 	transform: scaleX(0);
 	transform-origin: top left;
 	transition: transform 0.4s ease;
+}
+
+.footer-link:hover {
+	color: rgba(255, 255, 255, 0.5);
 }
 
 .footer-link:hover::before {
@@ -68,23 +69,38 @@
 
 @media (max-width: 768px) {
 	.footer {
+		margin-top: 6%;
+		font-size: 1em;
+	}
+
+	.footer-content {
 		flex-direction: column;
 		text-align: center;
-		padding: 15px;
+		justify-content: center;
+		align-items: center;
+		margin: 1% 1%;
+		margin-bottom: 2%;
+	}
+
+	.footer-tag {
+		margin: 2.5% 0;
 	}
 
 	.footer-links {
+		align-items: center; /* Center links on smaller screens */
 		justify-content: center; /* Center links on smaller screens */
 		width: 100%;
-		margin: 10px 0; /* Add margin for spacing */
 	}
 
 	.footer-links ul {
 		justify-content: center; /* Center links on smaller screens */
-		gap: 5px; /* More gap for smaller screens */
 	}
+}
 
-	.footer-links li {
-		margin: 0px 15px; /* Adjust margin for smaller screens */
+@media (max-width: 480px) {
+	.footer {
+		margin-top: 8%;
+		margin-bottom: 4%;
+		font-size: 0.9em;
 	}
 }

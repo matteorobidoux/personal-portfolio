@@ -3,15 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import ReactDOM from "react-dom";
 import { useEffect, useState, useCallback } from "react";
 
-import overflow from "../images/projects/overflow.png";
-import campusConnect from "../images/projects/campus_connect.png";
-
-const projectImages = {
-	overflow,
-	campusConnect
-};
-
-function PortfolioModal({ isOpen, onClose, project }) {
+function PortfolioModal({ isOpen, onClose, project, projectImages }) {
 	const [showModal, setShowModal] = useState(isOpen);
 
 	useEffect(() => {
@@ -27,6 +19,12 @@ function PortfolioModal({ isOpen, onClose, project }) {
 		setTimeout(onClose, 300);
 	}, [onClose]);
 
+	const handleModalClick = (event) => {
+		if (event.target.classList.contains("PortfolioModal")) {
+			handleClose();
+		}
+	};
+
 	useEffect(() => {
 		const handleEscape = (event) => {
 			if (event.key === "Escape") {
@@ -34,9 +32,11 @@ function PortfolioModal({ isOpen, onClose, project }) {
 			}
 		};
 		document.addEventListener("keydown", handleEscape);
+		window.addEventListener("click", handleModalClick);
 
 		return () => {
 			document.removeEventListener("keydown", handleEscape);
+			window.removeEventListener("click", handleModalClick);
 		};
 	}, [handleClose]);
 

@@ -1,0 +1,38 @@
+[
+	{
+		"name": "Campus Connect",
+		"image": "campusConnect",
+		"repo": "https://github.com/matteorobidoux/campus-connect",
+		"description": "Developed a MERN application to replace Omnivox for students at Dawson College, offering a suite of features designed to enhance the learning experience. This application includes a real-time chat system utilizing Socket.IO, enabling dynamic room-based interactions for students in common classes. Additionally, it features a shared calendar for efficient event management and enhanced functionalities that foster collaborative learning and seamless communication. Dawson College's course listings and instructor data were scraped for seamless integration into the application, ensuring that students have access to up-to-date information."
+	},
+	{
+		"name": "Ring Camera",
+		"image": "ringCamera",
+		"repo": "https://github.com/matteorobidoux/mqtt-client-app",
+		"description": "Developed a sophisticated real-time GUI application using JavaFX, Python and Java on a Raspberry Pi to dynamically manage and display sensor data, including temperature, humidity, doorbell events, and motion camera feeds. To ensure secure communication, we deployed MQTT with HiveMQ, implementing encrypted messaging and maintaining data integrity through message signing and verification to prevent unauthorized access and ensure accuracy."
+	},
+	{
+		"name": "Pokemon Mobile",
+		"image": "pokemonMobile",
+		"repo": "https://github.com/matteorobidoux/pokemon-mobile",
+		"description": "Created a fully functional replica of a Pokémon game using Android Studio in Kotlin, integrating a robust API to retrieve dynamic game data and utilizing a local database to store and manage player progress and game information. Using complex formulas and algorithms, the game simulates Pokémon battles, capturing, and leveling up, providing an engaging and interactive experience for players. The game features a user-friendly interface with intuitive controls and a visually appealing design, offering an immersive gaming experience on mobile devices."
+	},
+	{
+		"name": "Genetic Algorithm",
+		"image": "geneticAlgorithm",
+		"repo": "https://github.com/matteorobidoux/genetic-algorithm-project",
+		"description": "Developed an advanced genetic algorithm in C# by leveraging evolutionary techniques, the algorithm iteratively refined its strategies across multiple generations and diverse grid configurations. It employed advanced heuristics and adaptive mechanisms to minimize the total number of moves, demonstrating sophisticated problem-solving and optimization capabilities through the evolution of optimal pathfinding strategies."
+	},
+	{
+		"name": "Django Web App",
+		"image": "djangoWebApp",
+		"repo": "https://github.com/matteorobidoux/django-web-project",
+		"description": "Developed a web platform for showcasing academic projects, developed with Django for backend operations and PostgreSQL for database management. It features user registration, profile management, messaging, and notifications. The platform includes a dynamic project catalog with search and filter capabilities, and an API for managing items. Administrative roles are segmented into superusers, item admins, and member admins, each with specific permissions to manage users and content effectively."
+	},
+	{
+		"name": "Music Database",
+		"image": "musicDatabase",
+		"repo": "https://github.com/matteorobidoux/music-db-project",
+		"description": "Developed a music database project using Java and SQL featuring a complex entity-relationship diagram (ERD) to model intricate data relationships. The project involved designing and implementing advanced SQL queries to handle complex data retrieval and manipulation tasks, showcasing proficiency in database schema design and query optimization."
+	}
+]

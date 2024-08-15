@@ -3,13 +3,17 @@ import PortfolioModal from "./PortfolioModal";
 import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-import projects from "../data/projects.json";
-import languages from "../data/languages.json";
-import employments from "../data/employments.json";
-import degrees from "../data/degrees.json";
+import projects from "../data/portfolio/projects.json";
+import languages from "../data/portfolio/languages.json";
+import employments from "../data/portfolio/employments.json";
+import degrees from "../data/portfolio/degrees.json";
 
-import overflow from "../images/projects/overflow.png";
+import ringCamera from "../images/projects/ring_camera.png";
 import campusConnect from "../images/projects/campus_connect.png";
+import djangoWebApp from "../images/projects/django_web_app.png";
+import geneticAlgorithm from "../images/projects/genetic_algorithm.png";
+import musicDatabase from "../images/projects/music_database.png";
+import pokemonMobile from "../images/projects/pokemon_mobile.png";
 
 import java from "../images/languages/java.png";
 import python from "../images/languages/python.png";
@@ -27,8 +31,12 @@ import csharp from "../images/languages/csharp.png";
 import { motion } from "framer-motion";
 
 const projectImages = {
-	overflow,
-	campusConnect
+	ringCamera,
+	campusConnect,
+	djangoWebApp,
+	geneticAlgorithm,
+	musicDatabase,
+	pokemonMobile
 };
 
 const languageImages = {
@@ -118,9 +126,9 @@ function Portfolio() {
 								<h2>
 									{employment.title} @ {employment.company}
 								</h2>
-								<h3>{employment.duration}</h3>
-								<h3>{employment.employment}</h3>
-								<h3>{employment.skills}</h3>
+								<h3> {employment.duration}</h3>
+								<h3> {employment.employment}</h3>
+								<h3> {employment.skills}</h3>
 								<h3 className="employment-item-description">
 									{employment.description}
 								</h3>
@@ -154,6 +162,7 @@ function Portfolio() {
 				isOpen={isModalOpen}
 				onClose={closeModal}
 				project={selectedProject}
+				projectImages={projectImages}
 			/>
 		</motion.div>
 	);

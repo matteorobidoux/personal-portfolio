@@ -12,7 +12,7 @@ function Contact() {
 		from_name: "",
 		reply_email: "",
 		message: "",
-		errors: {},
+		errors: false,
 		loading: false,
 		success: false
 	});
@@ -23,23 +23,48 @@ function Contact() {
 	};
 
 	const validateForm = () => {
-		const errors = {};
-		const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
+		const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+		let errors = false;
+
+		const formInputNameEl = document.querySelector(
+			".form-input[name='from_name']"
+		);
+		const formInputEmailEl = document.querySelector(
+			".form-input[name='reply_email']"
+		);
+		const formInputMessageEl = document.querySelector(
+			".form-input[name='message']"
+		);
 
 		if (!formData.from_name) {
-			errors.name = "Name is required.";
+			errors = true;
+			formInputNameEl.classList.remove("form-error");
+			void formInputNameEl.offsetWidth;
+			formInputNameEl.classList.add("form-error");
+		} else {
+			formInputNameEl.classList.remove("form-error");
 		}
 
 		if (!formData.reply_email || !emailRegex.test(formData.reply_email)) {
-			errors.email = "A valid email is required.";
+			errors = true;
+			formInputEmailEl.classList.remove("form-error");
+			void formInputEmailEl.offsetWidth;
+			formInputEmailEl.classList.add("form-error");
+		} else {
+			formInputEmailEl.classList.remove("form-error");
 		}
 
 		if (!formData.message) {
-			errors.message = "Message cannot be empty.";
+			errors = true;
+			formInputMessageEl.classList.remove("form-error");
+			void formInputMessageEl.offsetWidth;
+			formInputMessageEl.classList.add("form-error");
+		} else {
+			formInputMessageEl.classList.remove("form-error");
 		}
 
 		setFormData((prevState) => ({ ...prevState, errors }));
-		return Object.keys(errors).length === 0;
+		return !errors;
 	};
 
 	const handleSubmit = async (event) => {
@@ -59,7 +84,7 @@ function Contact() {
 					from_name: "",
 					reply_email: "",
 					message: "",
-					errors: {},
+					errors: false,
 					loading: false,
 					success: true
 				});
@@ -103,9 +128,6 @@ function Contact() {
 						value={formData.from_name}
 						onChange={handleChange}
 					/>
-					{formData.errors.name && (
-						<p className="form-error">{formData.errors.name}</p>
-					)}
 				</div>
 
 				<div className="form-group">
@@ -118,9 +140,6 @@ function Contact() {
 						value={formData.reply_email}
 						onChange={handleChange}
 					/>
-					{formData.errors.email && (
-						<p className="form-error">{formData.errors.email}</p>
-					)}
 				</div>
 
 				<div className="form-group">
@@ -132,9 +151,6 @@ function Contact() {
 						value={formData.message}
 						onChange={handleChange}
 					/>
-					{formData.errors.message && (
-						<p className="form-error">{formData.errors.message}</p>
-					)}
 				</div>
 
 				<div className="form-indicator">

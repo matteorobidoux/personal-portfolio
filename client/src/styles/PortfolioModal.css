@@ -131,4 +131,14 @@
 	font-size: 1.3em;
 	line-height: 1.5;
 	text-align: center;
+	padding: 10px;
+	background-color: rgba(46, 61, 33, 0.275);
+	border: 1px solid rgba(46, 61, 33, 0.8);
+	border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+	.modal-description {
+		font-size: 1.1em;
+	}
 }
