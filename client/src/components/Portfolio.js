@@ -8,25 +8,25 @@ import languages from "../data/portfolio/languages.json";
 import employments from "../data/portfolio/employments.json";
 import degrees from "../data/portfolio/degrees.json";
 
-import ringCamera from "../images/projects/ring_camera.png";
-import campusConnect from "../images/projects/campus_connect.png";
-import djangoWebApp from "../images/projects/django_web_app.png";
-import geneticAlgorithm from "../images/projects/genetic_algorithm.png";
-import musicDatabase from "../images/projects/music_database.png";
-import pokemonMobile from "../images/projects/pokemon_mobile.png";
+import ringCamera from "../images/projects/ring_camera.webp";
+import campusConnect from "../images/projects/campus_connect.webp";
+import djangoWebApp from "../images/projects/django_web_app.webp";
+import geneticAlgorithm from "../images/projects/genetic_algorithm.webp";
+import musicDatabase from "../images/projects/music_database.webp";
+import pokemonMobile from "../images/projects/pokemon_mobile.webp";
 
-import java from "../images/languages/java.png";
-import python from "../images/languages/python.png";
-import javascript from "../images/languages/javascript.png";
-import c from "../images/languages/c.png";
-import html from "../images/languages/html.png";
-import css from "../images/languages/css.png";
-import react from "../images/languages/react.png";
-import sql from "../images/languages/sql.png";
-import typescript from "../images/languages/typescript.png";
-import mysql from "../images/languages/mysql.png";
-import kotlin from "../images/languages/kotlin.png";
-import csharp from "../images/languages/csharp.png";
+import java from "../images/languages/java.webp";
+import python from "../images/languages/python.webp";
+import javascript from "../images/languages/javascript.webp";
+import c from "../images/languages/c.webp";
+import html from "../images/languages/html.webp";
+import css from "../images/languages/css.webp";
+import react from "../images/languages/react.webp";
+import sql from "../images/languages/sql.webp";
+import typescript from "../images/languages/typescript.webp";
+import mysql from "../images/languages/mysql.webp";
+import kotlin from "../images/languages/kotlin.webp";
+import csharp from "../images/languages/csharp.webp";
 
 import { motion } from "framer-motion";
 

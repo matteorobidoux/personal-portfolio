@@ -79,7 +79,7 @@
 .project-item .project-image {
 	width: 300px;
 	height: 180px;
-	border: 1.5px solid rgba(46, 61, 33, 0.8);
+	border: 1.5px solid black;
 	transition: transform 0.3s; /* Adjust transition property to transform */
 	transform-origin: center; /* Ensures scaling occurs from the center */
 }

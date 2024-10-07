@@ -37,7 +37,7 @@ function Main() {
 					<h1 className="name-text">Matteo Robidoux</h1>
 				</div>
 				<div className="title">
-					<h3 className="title-text">| Software Developer |</h3>
+					<h3 className="title-text">Software Developer</h3>
 				</div>
 				<div className="desc">
 					<h2 className="desc-text">

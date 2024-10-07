@@ -34,7 +34,6 @@
 	overflow-wrap: break-word; /* Handle overflow gracefully */
 	word-break: break-word; /* Support for breaking long words */
 	margin: 0 auto; /* Center the text horizontally */
-	line-height: 1.2; /* Ensure proper line height */
 }
 
 .cover .title-text {
@@ -42,6 +41,7 @@
 	max-width: 100%;
 	overflow-wrap: break-word;
 	word-break: break-word;
+	margin-top: 1%;
 }
 
 .desc {
@@ -85,7 +85,7 @@
 
 @media (max-width: 480px) {
 	.name {
-		font-size: 2.5em; /* Adjust font size for smaller screens */
+		font-size: 2em; /* Adjust font size for smaller screens */
 		word-break: break-word; /* Ensure text breaks if necessary */
 	}
 	.cover .title-text {

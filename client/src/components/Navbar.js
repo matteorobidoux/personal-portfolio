@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import logo from "../images/logos/logo-white.png";
+import logo from "../images/logos/logo-white.webp";
 import "../styles/Navbar.css";
 
 function Navbar() {

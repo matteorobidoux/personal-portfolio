@@ -1,8 +1,9 @@
 import "../styles/About.css";
 import { motion } from "framer-motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import me from "../images/about/profile.png";
+import me from "../images/about/profile.webp";
 import about from "../data/about/about.json";
+import CV from "../data/about/MatteoRobidouxCV.pdf";
 
 function About() {
 	return (
@@ -20,6 +21,12 @@ function About() {
 				<div className="about-text-container">
 					<h1 className="about-text-title"> I'm Matteo Robidoux,</h1>
 					<h2 className="about-text-content">{about.description}</h2>
+					<div className="about-cv-container">
+						<a className="about-cv-button" href={CV} download>
+							{" "}
+							Download My CV{" "}
+						</a>
+					</div>
 				</div>
 			</div>
 		</motion.div>
